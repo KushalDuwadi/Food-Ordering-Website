@@ -1,0 +1,156 @@
+/* Cart.css */
+
+.cart {
+    padding: 40px 8%;
+    font-family: sans-serif;
+}
+
+.cart-items {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 2px solid #eee;
+}
+
+.cart-items-title p {
+    margin: 0;
+    text-align: center;
+}
+
+.cart-items-cart-items-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.cart-items-cart-items-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.cart-items-cart-items-item p {
+    margin: 0;
+    text-align: center;
+}
+
+.cart-items-cart-items-item p:last-child {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  gap: 40px;
+}
+
+.cart-total {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-total h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.carrt-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.cart-total button {
+  width: 100%;
+  padding: 12px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-total button:hover {
+  background-color: #e6482e;
+}
+
+.cart-promocode {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.cart-promocode p {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.card-promocode-input {
+  display: flex;
+  gap: 10px;
+}
+
+.card-promocode-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.card-promocode-input button {
+  padding: 10px 20px;
+  background-color: #49557e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-promocode-input button:hover {
+  background-color: #333b5c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-bottom {
+    flex-direction: column;
+  }
+}
